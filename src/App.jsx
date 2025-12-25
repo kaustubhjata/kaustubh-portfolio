@@ -414,76 +414,81 @@ const [cards, setCards] = useState([
 </section>
 
 
-                    {/* CONTACT */}
 {/* CONTACT */}
-    <section id="contact" className="py-32 px-10 overflow-hidden">
-<h2 className="text-5xl sm:text-6xl font-serif font-bold mb-16 text-center px-4">
-  Contact Me!
-</h2>
+<section id="contact" className="py-24 px-4 sm:px-10 overflow-hidden">
+  <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold mb-12 text-center">
+    Contact Me!
+  </h2>
 
+  <div className="max-w-7xl mx-auto">
+    <div
+      className="
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-6
+        gap-6
+      "
+    >
+      {[
+        { label: "LinkedIn", link: "https://www.linkedin.com/in/jl-kaustubh/", icon: icons.linkedin },
+        { label: "Twitter", link: "https://x.com/kaustubhjl", icon: icons.twitter },
+        { label: "GitHub", link: "https://github.com/kaustubhjata", icon: icons.github },
+        { label: "Instagram", link: "https://www.instagram.com/kaustubh_jata/", icon: icons.instagram },
+        { label: "Mail", link: "mailto:jlkaustubh@gmail.com", icon: icons.email },
+        { label: "Resume", link: "/resume.pdf", icon: icons.resume },
+      ].map((item) => (
+        <motion.a
+          key={item.label}
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.12 }}
+          whileTap={{ scale: 0.97 }}
+          transition={{ type: "spring", stiffness: 220, damping: 18 }}
+          className="
+            relative
+            h-[200px]
+            sm:h-[240px]
+            lg:h-[280px]
+            rounded-3xl
+            bg-white/5
+            border border-white/10
+            backdrop-blur-xl
+            flex flex-col items-center justify-center
+            gap-4
+            cursor-pointer
+          "
+        >
+          <Icon path={item.icon} />
 
-      <div className="max-w-7xl mx-auto">
-        <div className="flex gap-6 justify-between">
+          <p className="text-xs uppercase tracking-widest text-slate-400">
+            {item.label}
+          </p>
 
-          {[
-            { label: "LinkedIn", link: "https://www.linkedin.com/in/jl-kaustubh/", icon: icons.linkedin },
-            { label: "Twitter", link: "https://x.com/kaustubhjl", icon: icons.twitter },
-            { label: "GitHub", link: "https://github.com/kaustubhjata", icon: icons.github },
-            { label: "Instagram", link: "https://www.instagram.com/kaustubh_jata/", icon: icons.instagram },
-            { label: "mail", link: "mailto:jlkaustubh@gmail.com", icon: icons.email },
-            { label: "Resume", link: "/resume.pdf", icon: icons.resume },
-          ].map((item) => (
-            <motion.a
-              key={item.label}
-              href={item.link}
-              whileHover={{ scale: 1.15, zIndex: 20 }}
-              transition={{ type: "spring", stiffness: 220, damping: 18 }}
-              className="
-                relative
-                w-[220px]
-                h-[320px]
-                rounded-3xl
-                bg-white/5
-                border border-white/10
-                backdrop-blur-xl
-                flex flex-col items-center justify-center
-                gap-6
-                cursor-pointer
-              "
-            >
-              <Icon path={item.icon} />
+          {/* Hover / Tap Glow */}
+          <motion.div
+            className="absolute inset-0 rounded-3xl pointer-events-none"
+            initial={{ opacity: 0 }}
+            whileHover={{ opacity: 1 }}
+            whileTap={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            style={{
+              background:
+                "linear-gradient(120deg, rgba(255,255,255,0.12), transparent)",
+            }}
+          />
+        </motion.a>
+      ))}
+    </div>
+  </div>
+</section>
 
-              <div className="text-center">
-                <p className="text-xs uppercase tracking-widest text-slate-400 mb-1">
-                  {item.label}
-                </p>
-                <p className="text-lg font-serif">
-                  {item.value}
-                </p>
-              </div>
-
-              {/* Hover Glow */}
-              <motion.div
-                className="absolute inset-0 rounded-3xl pointer-events-none"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                style={{
-                  background:
-                    "linear-gradient(120deg, rgba(255,255,255,0.08), transparent)",
-                }}
-              />
-            </motion.a>
-          ))}
-        </div>
-      </div>
-    </section>
 
 <footer className="py-16 text-center text-slate-400 text-sm">
   Made with <span className="text-red-500">♥</span> by Kaus
 </footer>
 
     </div>
-  );
   </div>);
 }
