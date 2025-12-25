@@ -3,26 +3,16 @@ import GlobalBackground from "./GlobalBackground";
 // Replaced local import with a remote placeholder to fix build error
 import kausImg from "./assets/kaus2.png";
 import { icons } from "./icons";
-import img1 from "./assets/baane...jpg"; 
-import img2 from "./assets/thumbsup.jpg";
-import img3 from "./assets/kauzimmer.jpg";
-import img4 from "./assets/literally me.jpg";
-import tambolaimage from "./assets/tambola blurred.png";
-import lockboximage from "./assets/LockBox.png";
-import pulseimage from "./assets/Pulse.png";
-import asisimage from "./assets/ASIS.png";
-import phishguardimage from "./assets/Phishguard.png";
-import mokshaimage from "./assets/Moska.png";
-// const img1 = "./assets/baane...jpg"; 
-// const img2 = "./assets/thumbsup.jpg";
-// const img3 = "./assets/kauzimmer.jpg";
-// const img4 = "./assets/literally me.jpg";
-// const tambolaimage = "./assets/tambola blurred.png";
-// const lockboximage = "./assets/lockbox.png";
-// const pulseimage = "./assets/pulse.png";
-// const asisimage = "./assets/asis.png";
-// const phishguardimage = "./assets/phishguard.png";
-// const mokshaimage = "./assets/moska.png";
+// import img1 from "./assets/baane...jpg"; 
+// import img2 from "./assets/thumbsup.jpg";
+// import img3 from "./assets/kauzimmer.jpg";
+// import img4 from "./assets/literally me.jpg";
+// import tambolaimage from "./assets/tambola blurred.png";
+// import lockboximage from "./assets/LockBox.png";
+// import pulseimage from "./assets/Pulse.png";
+// import asisimage from "./assets/ASIS.png";
+// import phishguardimage from "./assets/Phishguard.png";
+// import mokshaimage from "./assets/Moska.png";
 import { motion } from "framer-motion";
 
 
@@ -70,10 +60,10 @@ export default function App() {
   }, []);
 
 const [cards, setCards] = useState([
-    { id: 1, src: img1, alt: "Photo 1" },
-    { id: 2, src: img2, alt: "Photo 2" },
-    { id: 3, src: img3, alt: "Photo 3" },
-    { id: 4, src: img4, alt: "Photo 4" },
+    { id: 1, src: "/images/baane.jpg", alt: "Photo 1" },
+    { id: 2, src: "/images/thumbsup.jpg", alt: "Photo 2" },
+    { id: 3, src: "/images/kauzimmer.jpg", alt: "Photo 3" },
+    { id: 4, src: "/images/literally-me.jpg", alt: "Photo 4" },
   ]);
 
   const handleShuffle = () => {
@@ -324,10 +314,7 @@ const [cards, setCards] = useState([
 >
   {/* Section Title */}
   <div className="max-w-[1200px] mx-auto px-6 mb-16">
-    <h2 className="text-5xl sm:text-6xl font-serif font-bold mb-16 text-center px-4">
-  Projects
-</h2>
-
+    <h2 className="text-5xl sm:text-6xl font-serif font-bold mb-16 text-center px-4">Projects</h2>
   </div>
 
   {/* Infinite Scrolling Carousel */}
@@ -349,7 +336,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="LockBox"
               description="A secure online space for storing and managing files with permissions and real-time updates."
-              imageSrc={lockboximage}
+              imageSrc="/images/lockbox.png"
             />
           </a>
 
@@ -357,8 +344,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="Pulse"
               description="AI-powered wellness platform for journaling, mood tracking, chatrooms, and voice interaction."
-              imageSrc={pulseimage
-              }
+              imageSrc="/images/pulse.png"
             />
           </a>
 
@@ -366,7 +352,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="ASIS"
               description="AI system that creates podcasts and summaries from documents with a Q&A chatbot."
-              imageSrc={asisimage}
+              imageSrc="/images/asis.png"
             />
           </a>
 
@@ -374,7 +360,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="PhishGuard 360"
               description="Paste a URL and instantly detect whether a website is phishing or legitimate."
-              imageSrc={phishguardimage}
+              imageSrc="/images/phishguard.png"
             />
           </a>
 
@@ -382,7 +368,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="Personal Portfolios"
               description="Haha! I Put this in without my friend knowing, don't tell him. He never paid me lol."
-              imageSrc={mokshaimage}
+              imageSrc="/images/moska.png"
             />
           </a>
 
@@ -390,7 +376,7 @@ const [cards, setCards] = useState([
                   <ProjectCard
                     title="Online Tambola"
                     description="Play Tambola online in sessions and rooms like Scribble. Still a work in progress but you'll see this here soon!"
-                    imageSrc={tambolaimage}
+                    imageSrc="/images/tambola blurred.png"
                   />
                 </a>
 
