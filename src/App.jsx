@@ -273,39 +273,66 @@ const [cards, setCards] = useState([
             </div>
           </div>
         </div>
-
         {/* SKILLS */}
-        <div id="skills" className="min-h-screen flex items-center border-t border-white/0">
-          <div className="container mx-auto px-6 py-20">
-            <h2 className="text-5xl sm:text-6xl font-serif font-bold mb-16 text-center px-4">Skills</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-              {[
-                "AI/ML",
-                "Python",
-                "Java",
-                "React",
-                "JavaScript",
-                "HTML/CSS",
-                "SQL",
-                "Networks",
-                "Graphic Design",
-                "Photography",
-                "Leadership",
-                "Content Creation & Design"
-              ].map((skill, idx) => (
-                <div
-                  key={idx}
-                  className="p-6 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 text-center group cursor-default"
-                >
-                  <span className="text-lg font-medium text-slate-300 group-hover:text-white transition-colors">
-                    {skill}
-                  </span>
-                </div>
-              ))}
-              <p>There are so many, I cant even list everything at once ;)</p>
-            </div>
-          </div>
-        </div>
+{/* SKILLS */}
+<div
+  id="skills"
+  className="min-h-screen flex items-center border-t border-white/0"
+>
+  <div className="container mx-auto px-6 py-20">
+    <h2 className="text-5xl sm:text-6xl font-serif font-bold mb-16 text-center px-4">
+      Skills
+    </h2>
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      {[
+        { name: "AI/ML", link: "https://www.ibm.com/topics/artificial-intelligence" },
+        { name: "Python", link: "https://www.python.org/" },
+        { name: "Java", link: "https://www.oracle.com/java/" },
+        { name: "React", link: "https://react.dev/" },
+        { name: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+        { name: "HTML/CSS", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+        { name: "SQL", link: "https://www.w3schools.com/sql/" },
+        { name: "Networks", link: "https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/" },
+        { name: "Graphic Design", link: "https://www.figma.com/" },
+        { name: "Photography", link: "https://www.instagram.com/kaustubhjl" },
+        { name: "Leadership", link: "https://www.instagram.com/_chayaofficial" },
+        {
+          name: "Content Creation & Design",
+          link: "https://www.instagram.com/events.ngitkmec",
+        },
+      ].map((skill, idx) => (
+        <a
+          key={idx}
+          href={skill.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            skill-card
+            p-6
+            rounded-xl
+            border border-white/10
+            bg-white/5
+            transition-all duration-300
+            text-center
+            cursor-pointer
+            focus:outline-none focus:ring-1 focus:ring-slate-400/40
+            no-underline
+          "
+        >
+          <span className="text-lg font-medium text-slate-300 hover:text-white transition-colors">
+            {skill.name}
+          </span>
+        </a>
+      ))}
+
+      <p className="col-span-full text-center text-slate-400 mt-8 italic">
+        There are so many, I can’t even list everything at once ;)
+      </p>
+    </div>
+  </div>
+</div>
+
 
         {/* PROJECTS SECTION */}
 <section

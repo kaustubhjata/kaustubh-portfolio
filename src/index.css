@@ -4,10 +4,10 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  height:100%;
-  width:100%;
-  margin:0;
-  padding:0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -35,6 +35,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(-50%);
@@ -68,15 +69,22 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* ===============================
+   SKILL CARD BORDER LIGHT EFFECT
+   =============================== */
+/* ===============================
+   SKILL CARD BOX-SHADOW LIGHT
+   =============================== */
+
+.skill-card {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.skill-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(200, 200, 200, 0.35),
+    0 0 20px rgba(200, 200, 200, 0.15),
+    0 12px 40px rgba(0, 0, 0, 0.45);
 }
