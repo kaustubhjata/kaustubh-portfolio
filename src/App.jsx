@@ -3,16 +3,26 @@ import GlobalBackground from "./GlobalBackground";
 // Replaced local import with a remote placeholder to fix build error
 import kausImg from "./assets/kaus2.png";
 import { icons } from "./icons";
-const img1 = "./assets/baane...jpg"; 
-const img2 = "./assets/thumbsup.jpg";
-const img3 = "./assets/kauzimmer.jpg";
-const img4 = "./assets/literally me.jpg";
-const tambolaimage = "./assets/tambola blurred.png";
-const lockboximage = "./assets/lockbox.png";
-const pulseimage = "./assets/pulse.png";
-const asisimage = "./assets/asis.png";
-const phishguardimage = "./assets/phishguard.png";
-const mokshaimage = "./assets/moska.png";
+import img1 from "./assets/baane...jpg"; 
+import img2 from "./assets/thumbsup.jpg";
+import img3 from "./assets/kauzimmer.jpg";
+import img4 from "./assets/literally me.jpg";
+import tambolaimage from "./assets/tambola blurred.png";
+import lockboximage from "./assets/lockbox.png";
+import pulseimage from "./assets/pulse.png";
+import asisimage from "./assets/asis.png";
+import phishguardimage from "./assets/phishguard.png";
+import mokshaimage from "./assets/moska.png";
+// const img1 = "./assets/baane...jpg"; 
+// const img2 = "./assets/thumbsup.jpg";
+// const img3 = "./assets/kauzimmer.jpg";
+// const img4 = "./assets/literally me.jpg";
+// const tambolaimage = "./assets/tambola blurred.png";
+// const lockboximage = "./assets/lockbox.png";
+// const pulseimage = "./assets/pulse.png";
+// const asisimage = "./assets/asis.png";
+// const phishguardimage = "./assets/phishguard.png";
+// const mokshaimage = "./assets/moska.png";
 import { motion } from "framer-motion";
 
 
