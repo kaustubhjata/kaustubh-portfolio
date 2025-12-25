@@ -3,16 +3,16 @@ import GlobalBackground from "./GlobalBackground";
 // Replaced local import with a remote placeholder to fix build error
 import kausImg from "./assets/kaus2.png";
 import { icons } from "./icons";
-const img1 = "assets/baane...jpg"; 
-const img2 = "assets/thumbsup.jpg";
-const img3 = "assets/kauzimmer.jpg";
-const img4 = "assets/literally me.jpg";
-const tambolaimage = "assets/tambola blurred.png";
-const lockboximage = "assets/lockbox.png";
-const pulseimage = "assets/pulse.png";
-const asisimage = "assets/asis.png";
-const phishguardimage = "assets/phishguard.png";
-const mokshaimage = "assets/moska.png";
+const img1 = "./assets/baane...jpg"; 
+const img2 = "./assets/thumbsup.jpg";
+const img3 = "./assets/kauzimmer.jpg";
+const img4 = "./assets/literally me.jpg";
+const tambolaimage = "./assets/tambola blurred.png";
+const lockboximage = "./assets/lockbox.png";
+const pulseimage = "./assets/pulse.png";
+const asisimage = "./assets/asis.png";
+const phishguardimage = "./assets/phishguard.png";
+const mokshaimage = "./assets/moska.png";
 import { motion } from "framer-motion";
 
 
