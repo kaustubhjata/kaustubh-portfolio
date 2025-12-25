@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GlobalBackground from "./GlobalBackground";
 // Replaced local import with a remote placeholder to fix build error
-import kausImg from "./assets/kaus2.png";
+import kausImg from "/images/kaus2.png";
 import { icons } from "./icons";
 // import img1 from "./assets/baane...jpg"; 
 // import img2 from "./assets/thumbsup.jpg";
@@ -60,10 +60,10 @@ export default function App() {
   }, []);
 
 const [cards, setCards] = useState([
-    { id: 1, src: "/images/baane.jpg", alt: "Photo 1" },
+    { id: 1, src: "/images/baane...jpg", alt: "Photo 1" },
     { id: 2, src: "/images/thumbsup.jpg", alt: "Photo 2" },
     { id: 3, src: "/images/kauzimmer.jpg", alt: "Photo 3" },
-    { id: 4, src: "/images/literally-me.jpg", alt: "Photo 4" },
+    { id: 4, src: "/images/literally me.jpg", alt: "Photo 4" },
   ]);
 
   const handleShuffle = () => {
@@ -336,7 +336,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="LockBox"
               description="A secure online space for storing and managing files with permissions and real-time updates."
-              imageSrc="/images/lockbox.png"
+              imageSrc="/images/LockBox.png"
             />
           </a>
 
@@ -344,7 +344,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="Pulse"
               description="AI-powered wellness platform for journaling, mood tracking, chatrooms, and voice interaction."
-              imageSrc="/images/pulse.png"
+              imageSrc="/images/Pulse.png"
             />
           </a>
 
@@ -352,7 +352,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="ASIS"
               description="AI system that creates podcasts and summaries from documents with a Q&A chatbot."
-              imageSrc="/images/asis.png"
+              imageSrc="/images/ASIS.png"
             />
           </a>
 
@@ -360,7 +360,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="PhishGuard 360"
               description="Paste a URL and instantly detect whether a website is phishing or legitimate."
-              imageSrc="/images/phishguard.png"
+              imageSrc="/images/Phishguard.png"
             />
           </a>
 
@@ -368,7 +368,7 @@ const [cards, setCards] = useState([
             <ProjectCard
               title="Personal Portfolios"
               description="Haha! I Put this in without my friend knowing, don't tell him. He never paid me lol."
-              imageSrc="/images/moska.png"
+              imageSrc="/images/Moska.png"
             />
           </a>
 
