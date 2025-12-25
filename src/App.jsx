@@ -320,10 +320,10 @@ const [cards, setCards] = useState([
   {/* Infinite Scrolling Carousel */}
   <div className="relative overflow-hidden">
     <motion.div
-      className="flex gap-12 will-change-transform"
+      className="flex gap-12 w-max"
               animate={{ x: ["0%", "-50%"] }}
               transition={{
-                duration:15,
+                duration:20,
                 ease: "linear",
                 repeat: Infinity,
       }}
