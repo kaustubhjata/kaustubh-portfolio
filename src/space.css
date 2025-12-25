@@ -1,0 +1,8 @@
+.space-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1000;
+  pointer-events: none;
+}
